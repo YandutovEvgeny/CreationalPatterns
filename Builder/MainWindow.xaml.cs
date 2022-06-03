@@ -23,12 +23,19 @@ namespace Builder
         public MainWindow()
         {
             InitializeComponent();
+
+            listBox.Items.Add("Классическая");
+            listBox.Items.Add("С ананасами");
+            listBox.Items.Add("Маргарита");
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            BuilderClass cook = new ClassicPizzaBuilder();
+            /*BuilderClass cook = new ClassicPizzaBuilder();
             Pizza pizza = cook.GetPizza();
+            MessageBox.Show(pizza.GetInfo());*/
+            PizzaFactory factory = new PizzaFactory();
+            Pizza pizza = factory.GetPizza(listBox.SelectedIndex);
             MessageBox.Show(pizza.GetInfo());
         }
     }

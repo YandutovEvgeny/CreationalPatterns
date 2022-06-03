@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Builder"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="334.5" Width="332">
     <Grid>
-        <Button Click="Button_Click" Content="Button" HorizontalAlignment="Left" Margin="40,386,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Click="Button_Click" Content="Button" HorizontalAlignment="Left" Margin="116,273,0,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="0.493,0.575"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="240" Margin="10,10,0,0" VerticalAlignment="Top" Width="291"/>
 
     </Grid>
 </Window>

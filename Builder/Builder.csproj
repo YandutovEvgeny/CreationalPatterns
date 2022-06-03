@@ -74,6 +74,7 @@
     <Compile Include="MargaritaPizzaBuilder.cs" />
     <Compile Include="PineapplePizzaBuilder.cs" />
     <Compile Include="Pizza.cs" />
+    <Compile Include="PizzaFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
